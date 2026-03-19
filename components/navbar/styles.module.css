@@ -1,0 +1,299 @@
+/* ════════════════════════════════════
+   Navbar.module.css
+════════════════════════════════════ */
+
+/* ─── Shell ─── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-height, 72px);
+  display: flex;
+  align-items: center;
+  /* starts transparent over the hero */
+  background: transparent;
+  transition:
+    background 0.45s var(--ease-out),
+    box-shadow 0.45s var(--ease-out),
+    backdrop-filter 0.45s;
+}
+
+.navbarScrolled {
+  background: rgba(11, 22, 40, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(201, 168, 76, 0.15);
+}
+
+/* ─── Inner layout ─── */
+.inner {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ─── Logo ─── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoMark {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.logoDivider {
+  display: block;
+  width: 1px;
+  height: 22px;
+  background: rgba(201, 168, 76, 0.35);
+}
+
+.logoText {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(240, 235, 223, 0.85);
+  white-space: nowrap;
+  /* hide on small screens */
+}
+
+@media (max-width: 640px) {
+  .logoText { display: none; }
+}
+
+/* ─── Desktop nav ─── */
+.desktopNav {
+  margin-left: auto;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(240, 235, 223, 0.72);
+  padding: 0.5rem 0.85rem;
+  text-decoration: none;
+  transition: color 0.25s;
+  overflow: hidden;
+}
+.navLink:hover {
+  color: #f0ebdf;
+}
+.navLinkActive {
+  color: var(--gold) !important;
+}
+
+/* animated underline */
+.navUnderline {
+  position: absolute;
+  bottom: 4px;
+  left: 0.85rem;
+  right: 0.85rem;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease-out);
+}
+.navLink:hover .navUnderline {
+  transform: scaleX(1);
+}
+.navLinkActive .navUnderline {
+  transform: scaleX(1);
+}
+
+/* ─── CTA button ─── */
+.ctaBtn {
+  margin-left: 1.25rem;
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--gold);
+  padding: 0.6rem 1.4rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition:
+    background 0.25s,
+    box-shadow 0.25s,
+    transform 0.25s var(--ease-out);
+}
+.ctaBtn:hover {
+  background: var(--gold-light);
+  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ─── Mobile toggle ─── */
+.menuBtn {
+  display: none;
+  margin-left: auto;
+  color: rgba(240, 235, 223, 0.88);
+  padding: 0.4rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+.menuBtn:hover {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.1);
+}
+
+/* ─── Responsive: hide desktop nav, show burger ─── */
+@media (max-width: 900px) {
+  .desktopNav { display: none; }
+  .ctaBtn      { display: none; }
+  .menuBtn     { display: flex; align-items: center; justify-content: center; }
+}
+
+/* ════════════════════════════════════
+   MOBILE DRAWER
+════════════════════════════════════ */
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 8vw, 4rem);
+  transform: translateX(100%);
+  transition: transform 0.55s var(--ease-out);
+  pointer-events: none;
+}
+.drawerOpen {
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+/* grain overlay in drawer */
+.drawer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 180px;
+  pointer-events: none;
+}
+
+.drawerList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.drawerItem {
+  opacity: 0;
+  transform: translateX(24px);
+  transition:
+    opacity 0.45s var(--ease-out),
+    transform 0.45s var(--ease-out);
+}
+.drawerOpen .drawerItem {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.drawerLink {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  font-weight: 600;
+  color: rgba(240, 235, 223, 0.75);
+  padding-block: 0.35rem;
+  text-decoration: none;
+  transition: color 0.25s;
+  letter-spacing: -0.01em;
+}
+.drawerLink:hover,
+.drawerLinkActive {
+  color: var(--gold-light);
+}
+
+.drawerNum {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(201, 168, 76, 0.5);
+  margin-bottom: 0.2rem;
+}
+
+.drawerCta {
+  margin-top: 3rem;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.45s var(--ease-out),
+    transform 0.45s var(--ease-out);
+}
+.drawerOpen .drawerCta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drawerCtaBtn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--gold);
+  padding: 0.85rem 2.2rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.25s;
+}
+.drawerCtaBtn:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* ─── Backdrop ─── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 98;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
