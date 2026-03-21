@@ -123,24 +123,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className={styles.contactLabel}>Email</p>
-                    <a href="mailto:info@gbplatforms.com" className={styles.contactValue}>
-                      info@gbplatforms.com
+                    <a href="mailto:aao@greatbusinessplatforms.com" className={styles.contactValue}>
+                      aao@greatbusinessplatforms.com
                     </a>
                   </div>
                 </div>
-
-                <div className={styles.contactItem}>
-                  <div className={styles.contactIcon}>
-                    <Phone size={16} />
-                  </div>
-                  <div>
-                    <p className={styles.contactLabel}>Phone</p>
-                    <a href="tel:+27000000000" className={styles.contactValue}>
-                      +27 (0) 00 000 0000
-                    </a>
-                  </div>
-                </div>
-
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
                     <MapPin size={16} />

@@ -56,7 +56,7 @@ export default function Footer() {
                 <Linkedin size={17} />
               </a>
               <a
-                href="mailto:info@gbplatforms.com"
+                href="mailto:aao@greatbusinessplatforms.com"
                 className={styles.socialIcon}
                 aria-label="Email us"
               >
@@ -111,8 +111,8 @@ export default function Footer() {
               </li>
               <li className={styles.contactItem}>
                 <Mail size={14} className={styles.contactIcon} />
-                <a href="mailto:info@gbplatforms.com" className={styles.footerLink}>
-                  info@gbplatforms.com
+                <a href="mailto:aao@greatbusinessplatforms.com" className={styles.footerLink}>
+                  aao@greatbusinessplatforms.com
                 </a>
               </li>
             </ul>
