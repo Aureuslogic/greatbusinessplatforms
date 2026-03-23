@@ -3,22 +3,24 @@ import { Linkedin, Mail, MapPin } from "lucide-react";
 import styles from "./styles.module.css";
 
 const QUICK_LINKS = [
-  { href: "/about",    label: "About Us"     },
-  { href: "/services", label: "Services"     },
-  { href: "/sectors",  label: "Sectors"      },
-  { href: "/contact",  label: "Contact"      },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/ceo", label: "CEO" },
+  { href: "/sectors", label: "Sectors" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const SERVICES = [
-  { href: "/services#capital",    label: "Capital Mobilisation" },
-  { href: "/services#structuring", label: "Financial Structuring" },
-  { href: "/services#advisory",   label: "Strategic Advisory"   },
+  { href: "/services#service-01", label: "Capital Mobilisation" },
+  { href: "/services#service-02", label: "Financial Structuring" },
+  { href: "/services#service-03", label: "Strategic Advisory" },
+  { href: "/services#service-04", label: "Technology-Enabled Advisory" },
 ];
 
 const SECTORS = [
-  { href: "/sectors#energy",   label: "Energy Infrastructure"     },
-  { href: "/sectors#capital",  label: "Strategic Capital Projects" },
-  { href: "/sectors#water",    label: "Water Infrastructure"       },
+  { href: "/sectors#energy", label: "Energy Infrastructure" },
+  { href: "/sectors#capital", label: "Strategic Capital Projects" },
+  { href: "/sectors#water", label: "Water Infrastructure" },
 ];
 
 export default function Footer() {
@@ -34,7 +36,6 @@ export default function Footer() {
       {/* ── Main grid ── */}
       <div className={styles.container}>
         <div className={styles.grid}>
-
           {/* Brand column */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
@@ -43,7 +44,8 @@ export default function Footer() {
               <span className={styles.logoText}>Great Business Platforms</span>
             </Link>
             <p className={styles.tagline}>
-              Mobilising Capital for Transformational Infrastructure in Sub-Saharan Africa.
+              Mobilising Capital for Transformational Infrastructure in
+              Sub-Saharan Africa.
             </p>
             <div className={styles.socials}>
               <a
@@ -71,7 +73,9 @@ export default function Footer() {
             <ul className={styles.linkList}>
               {QUICK_LINKS.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className={styles.footerLink}>{label}</Link>
+                  <Link href={href} className={styles.footerLink}>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -83,7 +87,9 @@ export default function Footer() {
             <ul className={styles.linkList}>
               {SERVICES.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className={styles.footerLink}>{label}</Link>
+                  <Link href={href} className={styles.footerLink}>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,7 +101,9 @@ export default function Footer() {
             <ul className={styles.linkList}>
               {SECTORS.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className={styles.footerLink}>{label}</Link>
+                  <Link href={href} className={styles.footerLink}>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -111,7 +119,10 @@ export default function Footer() {
               </li>
               <li className={styles.contactItem}>
                 <Mail size={14} className={styles.contactIcon} />
-                <a href="mailto:aao@greatbusinessplatforms.com" className={styles.footerLink}>
+                <a
+                  href="mailto:aao@greatbusinessplatforms.com"
+                  className={styles.footerLink}
+                >
                   aao@greatbusinessplatforms.com
                 </a>
               </li>
@@ -120,7 +131,6 @@ export default function Footer() {
               Partner With Us
             </Link>
           </div>
-
         </div>
       </div>
 
@@ -132,9 +142,13 @@ export default function Footer() {
               &copy; {year} Great Business Platforms. All rights reserved.
             </p>
             <div className={styles.bottomLinks}>
-              <Link href="/privacy" className={styles.bottomLink}>Privacy Policy</Link>
+              <Link href="/privacy" className={styles.bottomLink}>
+                Privacy Policy
+              </Link>
               <span className={styles.bottomDot} />
-              <Link href="/terms"   className={styles.bottomLink}>Terms of Use</Link>
+              <Link href="/terms" className={styles.bottomLink}>
+                Terms of Use
+              </Link>
             </div>
           </div>
         </div>
