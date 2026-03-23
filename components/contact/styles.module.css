@@ -137,8 +137,6 @@
 /* ─── 2-column grid ─── */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1.55fr;
-  gap: clamp(2.5rem, 5vw, 5rem);
   align-items: start;
 }
 @media (max-width: 900px) {
