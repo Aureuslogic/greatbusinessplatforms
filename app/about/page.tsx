@@ -194,11 +194,12 @@ export default function AboutPage() {
             <em>Business Platforms</em>
           </h1>
           <p className={`${styles.heroSub} ${styles.a3}`}>
-            A technology-enabled corporate finance boutique working with
-            governments, public sector institutions, development finance
-            institutions, and strategic investors to mobilise and structure
-            developmental finance for transformational infrastructure across
-            Sub-Saharan Africa.
+            Great Business Platforms is a UK-based development finance and
+            infrastructure advisory firm focused on mobilising capital for
+            transformational projects across Sub-Saharan Africa. We work with
+            governments, developers, and investors to structure and fund
+            infrastructure projects that deliver both financial returns and
+            long-term economic impact.
           </p>
         </div>
         <div className={`${styles.heroScroll} ${styles.a4}`}>

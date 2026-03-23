@@ -21,8 +21,13 @@ function useInView(threshold = 0.15) {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } },
-      { threshold }
+      ([e]) => {
+        if (e.isIntersecting) {
+          setVisible(true);
+          obs.disconnect();
+        }
+      },
+      { threshold },
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -31,8 +36,14 @@ function useInView(threshold = 0.15) {
 }
 
 /* ─── animated section wrapper ─── */
-function Reveal({ children, delay = 0, className = "" }: {
-  children: React.ReactNode; delay?: number; className?: string;
+function Reveal({
+  children,
+  delay = 0,
+  className = "",
+}: {
+  children: React.ReactNode;
+  delay?: number;
+  className?: string;
 }) {
   const { ref, visible } = useInView();
   return (
@@ -101,7 +112,6 @@ const partners = [
 export default function Home() {
   return (
     <main className={styles.main}>
-
       {/* ══════════ HERO ══════════ */}
       <section className={styles.hero}>
         <div className={styles.heroBg} />
@@ -112,20 +122,23 @@ export default function Home() {
           <div className={styles.heroLine} />
 
           <h1 className={`${styles.heroHeading} ${styles.heroAnimate1}`}>
-            Mobilising Capital for Transformational Infrastructure in{" "}
-            <em>Sub-Saharan Africa</em>
+            Development Finance & Infrastructure Investment Advisory{" "}
+            <em>for Africa</em>
           </h1>
 
           <p className={`${styles.heroSub} ${styles.heroAnimate2}`}>
-            Great Business Platforms is a technology-enabled corporate finance boutique that works
-            with governments and public sector institutions across Sub-Saharan Africa to mobilise
-            and structure developmental finance — connecting governments, development finance
-            institutions, and global investors.
+            We mobilise capital, structure bankable projects, and connect global
+            investors to high-impact infrastructure opportunities across
+            Sub-Saharan Africa.
           </p>
 
           <div className={`${styles.heroCta} ${styles.heroAnimate3}`}>
-            <Link href="/services" className={styles.btnGold}>Our Services</Link>
-            <Link href="/contact" className={styles.btnGhost}>Partner With Us</Link>
+            <Link href="/services" className={styles.btnGold}>
+             Explore Investment Opportunities
+            </Link>
+            <Link href="/contact" className={styles.btnGhost}>
+              Partner With Us
+            </Link>
           </div>
         </div>
 
@@ -141,8 +154,7 @@ export default function Home() {
             <span className={styles.eyebrow}>Our Focus</span>
             <h2 className={styles.sectionTitle}>What We Do</h2>
             <p className={styles.sectionSub}>
-              Great Business Platforms helps governments and institutions design, structure, and
-              finance projects that deliver long-term economic value.
+             We are a UK-based development finance and infrastructure advisory firm focused on unlocking capital for large-scale projects across Sub-Saharan Africa.
             </p>
           </Reveal>
 
@@ -191,14 +203,14 @@ export default function Home() {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.splitGrid}>
-
             <Reveal>
               <div className={styles.splitLeft}>
                 <span className={styles.eyebrow}>Process</span>
                 <h2 className={styles.sectionTitle}>How We Work</h2>
                 <p className={styles.sectionSub}>
-                  We collaborate with governments, development finance institutions, and private
-                  sector investors to deliver projects that make a measurable impact.
+                  We collaborate with governments, development finance
+                  institutions, and private sector investors to deliver projects
+                  that make a measurable impact.
                 </p>
                 <ul className={styles.checkList}>
                   {howWeWork.map((item) => (
@@ -218,18 +230,19 @@ export default function Home() {
                   Our Role in Development Finance
                 </h3>
                 <p className={styles.infoCardText}>
-                  Sub-Saharan Africa faces a significant gap between its infrastructure needs and
-                  access to capital. Great Business Platforms bridges this gap by combining deep
-                  corporate finance expertise with technology-enabled advisory platforms.
+                  Sub-Saharan Africa faces a significant gap between its
+                  infrastructure needs and access to capital. Great Business
+                  Platforms bridges this gap by combining deep corporate finance
+                  expertise with technology-enabled advisory platforms.
                 </p>
                 <p className={styles.infoCardText}>
-                  We work at the intersection of public policy and private capital to structure and
-                  mobilise the financing needed for transformational projects that drive economic
-                  development across the continent.
+                  We work at the intersection of public policy and private
+                  capital to structure and mobilise the financing needed for
+                  transformational projects that drive economic development
+                  across the continent.
                 </p>
               </div>
             </Reveal>
-
           </div>
         </div>
       </section>
@@ -242,8 +255,8 @@ export default function Home() {
             <h2 className={styles.partnerTitle}>Partner With Us</h2>
             <div className={styles.partnerLine} />
             <p className={styles.partnerSub}>
-              We work with a diverse range of stakeholders committed to driving infrastructure
-              development across Sub-Saharan Africa.
+              We work with a diverse range of stakeholders committed to driving
+              infrastructure development across Sub-Saharan Africa.
             </p>
           </Reveal>
 
@@ -260,12 +273,16 @@ export default function Home() {
 
           <Reveal delay={400}>
             <div className={styles.partnerCta}>
-              <Link href="/contact" className={styles.btnGoldLg}>Get in Touch</Link>
+              <Link href="/contact" className={styles.btnGoldLg}>
+                Book a Strategy Call
+              </Link> 
+               <Link href="/contact" className={styles.btnGoldLg}>
+                Request Investment Opportunities
+              </Link>
             </div>
           </Reveal>
         </div>
       </section>
-
     </main>
   );
 }

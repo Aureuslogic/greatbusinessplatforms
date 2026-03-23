@@ -143,20 +143,6 @@
   .grid { grid-template-columns: 1fr; }
 }
 
-/* ══════════════════════════════════════════
-   INFO PANEL (left)
-══════════════════════════════════════════ */
-.infoPanel {
-  position: sticky;
-  top: calc(var(--nav-height, 72px) + 2rem);
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-@media (max-width: 900px) {
-  .infoPanel { position: static; }
-}
-
 
 
 .infoTitle {
