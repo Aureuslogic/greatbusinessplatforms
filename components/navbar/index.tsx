@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { href: "/ceo",       label: "CEO"      },
   { href: "/services",  label: "Services" },
   { href: "/sectors",   label: "Sectors"  },
+  { href: "/invest-in-africa", label: "Invest" },
   { href: "/contact",   label: "Contact"  },
 ];
 
