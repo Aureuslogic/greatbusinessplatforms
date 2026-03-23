@@ -7,6 +7,7 @@ const QUICK_LINKS = [
   { href: "/services", label: "Services" },
   { href: "/ceo", label: "CEO" },
   { href: "/sectors", label: "Sectors" },
+  { href: "/invest-in-africa", label: "Invest" },
   { href: "/contact", label: "Contact" },
 ];
 
