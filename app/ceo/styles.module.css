@@ -301,7 +301,6 @@
   }
 }
 
-/* hero entry animations */
 .a1 {
   animation: fadeUp 0.8s var(--ease-out) 0.3s both;
 }
