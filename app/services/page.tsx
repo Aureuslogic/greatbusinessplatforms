@@ -292,8 +292,8 @@ export default function ServicesPage() {
         <div className={styles.container}>
           <Reveal className={styles.sectionHead}>
             <div className={styles.goldBar} />
-            <span className={styles.eyebrow}>FAQ</span>
-            <h2 className={styles.sectionTitle}>Common Questions</h2>
+            <span className={styles.eyebrow}>Common Questions</span>
+            <h2 className={styles.sectionTitle}>FAQ</h2>
           </Reveal>
           <Reveal delay={150} className={styles.faqList}>
             {FAQS.map((item) => (

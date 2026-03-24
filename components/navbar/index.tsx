@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { href: "/services",  label: "Services" },
   { href: "/sectors",   label: "Sectors"  },
   { href: "/invest-in-africa", label: "Invest" },
+  { href: "/insights",  label: "Insights" },
   { href: "/contact",   label: "Contact"  },
 ];
 
@@ -68,12 +69,6 @@ export default function Navbar() {
               ))}
             </ul>
           </nav>
-
-          {/* ── Desktop CTA ── */}
-          <Link href="/contact" className={styles.ctaBtn}>
-            Partner With Us
-          </Link>
-
           {/* ── Mobile toggle ── */}
           <button
             className={styles.menuBtn}
