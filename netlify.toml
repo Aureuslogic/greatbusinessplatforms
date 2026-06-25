@@ -1,2 +1,10 @@
 [build]
 publish = "."
+command = ""
+
+# This is a static HTML site, not a Next.js project. The Next.js runtime
+# plugin is still enabled in the Netlify UI, so skip it to avoid the
+# incompatible runtime failing the build (publish-dir check and the
+# missing Next.js build output check).
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
