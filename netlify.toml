@@ -1,2 +1,15 @@
 [build]
 publish = "."
+# This is a static HTML site with no build step. An explicit no-op command here
+# overrides any build command configured in the Netlify UI (e.g. `npm run build`),
+# which fails because the repo has no package.json.
+command = "echo 'No build step required for this static site.'"
+
+[build.environment]
+# The "@netlify/plugin-nextjs" plugin is installed via the Netlify UI, but this
+# repo is a plain static HTML site with no Next.js build output. The plugin's
+# onBuild step fails ("publish directory cannot be the same as the base
+# directory" / "does not contain expected Next.js build output"). A UI-installed
+# plugin cannot be removed from config files, but the runtime honors this
+# environment variable to skip every plugin hook, which fully disables it.
+NETLIFY_NEXT_PLUGIN_SKIP = "true"
