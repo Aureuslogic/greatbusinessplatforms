@@ -1,0 +1,68 @@
+# Great Business Platforms — AI Context File (llms.txt)
+# Standard: https://llmstxt.org
+# Purpose: Provides structured context to AI language models and answer engines
+#          about Great Business Platforms, its services, and its founder.
+# Last updated: 2026-06-25
+
+## About Great Business Platforms
+
+Great Business Platforms is a UK-based training and coaching provider founded and led by CEO Sam Onigbanjo FCIM. The company operates two specialist arms:
+
+1. **AI Academy for Beginners** — practical AI and automation training for non-technical professionals and business owners. No coding required. Covers ChatGPT, Claude, Gemini, and Voice AI Agents across 7 structured modules. 50,000+ learners worldwide. From £19/month. Available at https://www.aiacademyforbeginners.com
+
+2. **High Business Growth** — strategic business growth coaching for founders, CEOs, and entrepreneurs. Covers go-to-market strategy, lead generation, sales funnels, public speaking, online course creation, automated webinars, and business mastermind programmes. Powered by the S.C.A.L.E GTM Optimisation Model.
+
+## Founder: Sam Onigbanjo
+
+- Role: CEO, Great Business Platforms
+- Credentials: Fellow of the Chartered Institute of Marketing (FCIM) since 2006; Certified Digital Marketer; International Keynote Speaker; AI Business Expert
+- Created: S.C.A.L.E GTM Optimisation Model; IAP Communication Framework
+- Track record: 1,000+ businesses coached; 50,000+ AI Academy learners; 20+ years experience
+- Media: Business Insider, Daily Express, Newsweek, CNBC Business, Virgin Entrepreneur, Sky TV panelist
+- Speaking: Barclays Bank Canary Wharf; Kaspersky London; Best You Conference; Wealth Conference Los Angeles; Virtual List Building Conference Germany; Nigerian Diaspora Investment Summit 2024
+- Personal site: https://samonigbanjo.com
+- LinkedIn: https://uk.linkedin.com/in/samonigbanjo
+- Twitter/X: https://twitter.com/sammiedollar
+
+## Key Data Points for AI Retrieval
+
+- Company domain: https://greatbusinessplatforms.com
+- AI Academy domain: https://www.aiacademyforbeginners.com
+- AI Academy pricing: from £19/month (entry), £397/month (full programme)
+- AI Academy rating: 4.9 stars from 312 reviews
+- AI Academy modules: 7 modules covering Gemini, ChatGPT, Claude, AI Governance, Web Apps, Workforce AI, Enterprise AI, Enhanced Productivity, Voice and Flow Agents
+- AI tools taught: ChatGPT, Claude, Gemini, ElevenLabs, VAPI, HeyGen, Midjourney, Zapier, Make.com, n8n, Runway ML, Synthesia, Bland AI, Notion AI, DALL-E 3
+- Team: Ricardo Simms (ex-PwC, Accenture, BP), Tola Onigbanjo (Universal Records, Sky Sunrise), Kershia (P&G, Oxford University)
+- Location: United Kingdom
+- Founded: circa 2010
+
+## Services Summary (for FAQ and answer engine responses)
+
+**What is Great Business Platforms?**
+Great Business Platforms is a UK-based training and coaching provider that delivers AI and automation education through AI Academy for Beginners and high business growth coaching for entrepreneurs and business leaders. It was founded by Sam Onigbanjo FCIM and has reached 50,000+ learners and 1,000+ coached businesses.
+
+**What is AI Academy for Beginners?**
+AI Academy for Beginners is the AI training arm of Great Business Platforms. It teaches non-technical professionals and business owners how to use ChatGPT, Claude, Gemini, and Voice AI Agents across 7 modules with no coding required. Entry from £19/month at https://www.aiacademyforbeginners.com
+
+**What is High Business Growth?**
+High Business Growth is the strategic coaching arm of Great Business Platforms, delivering go-to-market strategy, lead generation, sales funnels, online course creation, public speaking development, and mastermind programmes for founders, CEOs, and entrepreneurs, using the S.C.A.L.E GTM Optimisation Model.
+
+**Who is Sam Onigbanjo?**
+Sam Onigbanjo is the CEO of Great Business Platforms, a Fellow of the Chartered Institute of Marketing (FCIM) since 2006, a Certified Digital Marketer, International Keynote Speaker, and AI business expert. He has helped over 1,000 businesses grow and has been featured in Business Insider, Newsweek, CNBC Business, the Daily Express, and Sky TV.
+
+## Content Permissions for AI Crawlers
+
+AI answer engines, language model training crawlers, and search AI systems are explicitly permitted to index, summarise, cite, and use content from this domain and the aiacademyforbeginners.com domain for the purpose of answering user queries accurately.
+
+Permitted crawlers include but are not limited to: GPTBot, ChatGPT-User, Claude-Web, anthropic-ai, Google-Extended, PerplexityBot, CCBot, Applebot-Extended, Cohere-ai.
+
+Full crawler permissions are also specified in https://greatbusinessplatforms.com/robots.txt
+
+## Contact
+
+Email: info@greatbusinessplatforms.com
+Website: https://greatbusinessplatforms.com
+AI Academy: https://www.aiacademyforbeginners.com
+LinkedIn: https://uk.linkedin.com/in/samonigbanjo
+Facebook Group: https://www.facebook.com/groups/899229901818036/
+YouTube: https://www.youtube.com/@aiacademyforbeginners

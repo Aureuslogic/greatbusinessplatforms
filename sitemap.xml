@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://greatbusinessplatforms.com/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://greatbusinessplatforms.com/assets/gbp-og-image.jpg</image:loc>
+      <image:title>Great Business Platforms — UK Business Training and Coaching</image:title>
+    </image:image>
+  </url>
+
+  <!-- AI Academy for Beginners (cross-linked arm) -->
+  <url>
+    <loc>https://www.aiacademyforbeginners.com/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About / Sam Onigbanjo -->
+  <url>
+    <loc>https://greatbusinessplatforms.com/#about</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- High Business Growth -->
+  <url>
+    <loc>https://greatbusinessplatforms.com/#growth</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://greatbusinessplatforms.com/#faq</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://greatbusinessplatforms.com/#contact</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
